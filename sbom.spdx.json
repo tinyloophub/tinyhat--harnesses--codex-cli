@@ -1,0 +1,50 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "tinyhat-codex-cli-rust-v0.125.0-tinyhat",
+  "documentNamespace": "https://tinyloop.co/spdx/platform_repos/harnesses/codex-cli/rust-v0.125.0-tinyhat",
+  "creationInfo": {
+    "created": "2026-04-28T10:30:00Z",
+    "creators": [
+      "Tool: tinyhat-vendor-pipeline-v1",
+      "Organization: Tinyloop (https://tinyloop.co)"
+    ],
+    "comment": "v1 SBOM placeholder — covers the directly vendored upstream package only. Codex CLI's full transitive-dependency tree (Rust workspace + TypeScript shim) is computed at vendor time by the tinyhat vendor pipeline; v1.x bumps this to a generated tree (cargo + pnpm) so each pinned version row has a fully expanded SBOM."
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-codex",
+      "name": "codex",
+      "versionInfo": "rust-v0.125.0",
+      "downloadLocation": "https://github.com/openai/codex/archive/refs/tags/rust-v0.125.0.tar.gz",
+      "filesAnalyzed": false,
+      "supplier": "Organization: OpenAI",
+      "originator": "Organization: OpenAI",
+      "homepage": "https://github.com/openai/codex",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "Apache-2.0",
+      "copyrightText": "Copyright 2025 OpenAI",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "637f7dd6d737f3961e6bf32fbb3861c4953269c5"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:github/openai/codex@rust-v0.125.0"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-codex"
+    }
+  ]
+}
